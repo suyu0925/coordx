@@ -1,0 +1,15 @@
+{
+  "name": "coordx",
+  "version": "1.0.0",
+  "description": "conversion between various coordinate formats",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
