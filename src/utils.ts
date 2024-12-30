@@ -137,6 +137,13 @@ export const parseCoordinate = (input: string): Coordinate => {
   throw new Error('Invalid coordinate format')
 }
 
-export const formatCoordinate = (coord: Coordinate): string => {
-  return `${coord.lat},${coord.lng}`
+export type FormatOptions = {
+  fractionDigits?: number
+}
+export const formatCoordinate = (coord: Coordinate, { fractionDigits = 6 }: FormatOptions): string => {
+  if (fractionDigits) {
+    return `${coord.lat.toFixed(fractionDigits)},${coord.lng.toFixed(fractionDigits)}`
+  } else {
+    return `${coord.lat},${coord.lng}`
+  }
 }
