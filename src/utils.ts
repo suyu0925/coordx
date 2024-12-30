@@ -140,7 +140,7 @@ export const parseCoordinate = (input: string): Coordinate => {
 export type FormatOptions = {
   fractionDigits?: number
 }
-export const formatCoordinate = (coord: Coordinate, { fractionDigits = 6 }: FormatOptions): string => {
+export const formatCoordinate = (coord: Coordinate, { fractionDigits = 6 }: FormatOptions = {}): string => {
   if (fractionDigits) {
     return `${coord.lat.toFixed(fractionDigits)},${coord.lng.toFixed(fractionDigits)}`
   } else {

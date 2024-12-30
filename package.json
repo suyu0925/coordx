@@ -1,6 +1,6 @@
 {
   "name": "coordx",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "conversion between various coordinate formats",
   "main": "src/index.js",
   "types": "dist/index.d.ts",
