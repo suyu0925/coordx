@@ -1,12 +1,22 @@
 {
   "name": "coordx",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "conversion between various coordinate formats",
-  "main": "src/index.ts",
+  "main": "src/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "suyu0925",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suyu0925/coordx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suyu0925/coordx/issues"
+  },
   "license": "ISC",
   "devDependencies": {
     "tsx": "^4.19.2",
